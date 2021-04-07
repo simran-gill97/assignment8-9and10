@@ -1,0 +1,101 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Mobile: Theme Download</title>
+	<link rel="stylesheet" href="themes/contact.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role = "page" data-theme="a">
+		<div data-role = "header">
+		   <h2>Form Structure</h2>
+		</div>
+	 
+		<div data-role = "main" class = "ui-content">
+		   <form method = "post" action="demo.php">
+			  <label for = "fname">Name</label>
+				 <input type = "text" name = "fname" id = "fname" 
+					placeholder = "Full Name">
+
+			  <label for = "date">Date</label>
+			  <input type = "date" name = "date" id = "date">
+
+			  <label for = "select">Select City</label>
+			  <select name = "select" id = "select">
+				 <option value = "1">Belgaum</option>
+				 <option value = "2">Pune</option>
+				 <option value = "3">Chennai</option>
+				 <option value = "4">Bangalore</option>
+				 <option value = "5">Mumbai</option>
+			  </select>
+
+			  Flipswitch
+			  <input type = "checkbox" data-role = "flipswitch"><br/>
+
+			  Gender
+			  <label for = "radio1">
+				 <input type = "radio" name = "radio-choice-0" id = "radio1">Male</input>
+			  </label>
+			  
+			  <label for = "radio2">
+				 <input type = "radio" name = "radio-choice-0" id = "radio2">Female</input>
+			  </label>
+			  
+			  <label for = "radio3">
+				 <input type = "radio" name = "radio-choice-0" id = "radio3">Other</input   >
+			  </label>
+
+			  Education Qualification
+			  <label for = "checkbox1">
+				 <input type = "checkbox" id = "checkbox1">BE
+			  </label>
+			  
+			  <label for = "checkbox2">
+				 <input type = "checkbox" id = "checkbox2">BCA
+			  </label>
+			  
+			  <label for = "checkbox3">
+				 <input type = "checkbox" id = "checkbox3">BBA
+			  </label>
+			  
+			  <label for = "checkbox4">
+				 <input type = "checkbox" id = "checkbox4">MBA
+			  </label>
+			  
+			  <label for = "checkbox5">
+				 <input type = "checkbox" id = "checkbox5">MCA
+			  </label>
+		   </form>
+		</div>
+	 </div>
+	<div data-role="page" data-theme="a">
+		<div data-role="header" data-position="inline">
+			<h1>It Worked!</h1>
+		</div>
+		<div data-role="content" data-theme="a">
+			<p>Your theme was successfully downloaded. You can use this page as a reference for how to link it up!</p>
+			<pre>
+<strong>&lt;link rel=&quot;stylesheet&quot; href=&quot;themes/contact.min.css&quot; /&gt;</strong>
+<strong>&lt;link rel=&quot;stylesheet&quot; href=&quot;themes/jquery.mobile.icons.min.css&quot; /&gt;</strong>
+&lt;link rel=&quot;stylesheet&quot; href=&quot;http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css&quot; /&gt;
+&lt;script src=&quot;http://code.jquery.com/jquery-1.11.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js&quot;&gt;&lt;/script&gt;
+			</pre>
+			<p>This is content color swatch "A" and a preview of a <a href="#" class="ui-link">link</a>.</p>
+			<label for="slider1">Input slider:</label>
+			<input type="range" name="slider1" id="slider1" value="50" min="0" max="100" data-theme="a" />
+			<fieldset data-role="controlgroup"  data-type="horizontal" data-role="fieldcontain">
+			<legend>Cache settings:</legend>
+			<input type="radio" name="radio-choice-a1" id="radio-choice-a1" value="on" checked="checked" />
+			<label for="radio-choice-a1">On</label>
+			<input type="radio" name="radio-choice-a1" id="radio-choice-b1" value="off"  />
+			<label for="radio-choice-b1">Off</label>
+			</fieldset>
+		</div>
+	</div>
+</body>
+</html>
